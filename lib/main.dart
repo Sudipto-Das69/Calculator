@@ -90,7 +90,8 @@ Widget build(BuildContext context) {
 			child: Container(
 			child: GridView.builder(
 				itemCount: buttons.length,
-				gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
+				gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+					crossAxisCount: 4),
 				itemBuilder: (BuildContext context, int index) {
 					// Clear Button
 					if (index == 0) {
