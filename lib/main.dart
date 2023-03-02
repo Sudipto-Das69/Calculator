@@ -53,7 +53,8 @@ final List<String> buttons = [
 Widget build(BuildContext context) {
 	return Scaffold(
 	appBar: new AppBar(
-		title: new Text("Calculator"),
+    centerTitle: true,
+		title: new Text("Calc-Mate"),
 	), //AppBar
 	backgroundColor: Color.fromARGB(255, 255, 255, 255),
 	body: Column(
