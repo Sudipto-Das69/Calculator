@@ -53,10 +53,16 @@ final List<String> buttons = [
 Widget build(BuildContext context) {
 	return Scaffold(
 	appBar: new AppBar(
+<<<<<<< HEAD
     centerTitle: true,
 		title: new Text("Calc-Mate"),
 	), //AppBar
 	backgroundColor: Color.fromARGB(255, 255, 255, 255),
+=======
+		title: new Text("Calculator"),
+	), //AppBar
+	backgroundColor: Colors.white38,
+>>>>>>> 68b08b8 (bugfixes)
 	body: Column(
 		children: <Widget>[
 		Expanded(
@@ -69,7 +75,11 @@ Widget build(BuildContext context) {
 					alignment: Alignment.centerRight,
 					child: Text(
 						userInput,
+<<<<<<< HEAD
 						style: TextStyle(fontSize: 18, color: Color.fromARGB(255, 0, 0, 0)),
+=======
+						style: TextStyle(fontSize: 18, color: Colors.white),
+>>>>>>> 68b08b8 (bugfixes)
 					),
 					),
 					Container(
@@ -79,7 +89,11 @@ Widget build(BuildContext context) {
 						answer,
 						style: TextStyle(
 							fontSize: 30,
+<<<<<<< HEAD
 							color: Colors.black,
+=======
+							color: Colors.white,
+>>>>>>> 68b08b8 (bugfixes)
 							fontWeight: FontWeight.bold),
 					),
 					)
