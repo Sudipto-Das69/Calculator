@@ -53,9 +53,10 @@ final List<String> buttons = [
 Widget build(BuildContext context) {
 	return Scaffold(
 	appBar: new AppBar(
-		title: new Text("Calculator"),
+    centerTitle: true,
+		title: new Text("Calc-Mate"),
 	), //AppBar
-	backgroundColor: Colors.white38,
+	backgroundColor: Color.fromARGB(255, 255, 255, 255),
 	body: Column(
 		children: <Widget>[
 		Expanded(
@@ -68,7 +69,7 @@ Widget build(BuildContext context) {
 					alignment: Alignment.centerRight,
 					child: Text(
 						userInput,
-						style: TextStyle(fontSize: 18, color: Colors.white),
+						style: TextStyle(fontSize: 18, color: Color.fromARGB(255, 0, 0, 0)),
 					),
 					),
 					Container(
@@ -78,7 +79,7 @@ Widget build(BuildContext context) {
 						answer,
 						style: TextStyle(
 							fontSize: 30,
-							color: Colors.white,
+							color: Colors.black,
 							fontWeight: FontWeight.bold),
 					),
 					)
@@ -90,7 +91,8 @@ Widget build(BuildContext context) {
 			child: Container(
 			child: GridView.builder(
 				itemCount: buttons.length,
-				gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
+				gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+					crossAxisCount: 4),
 				itemBuilder: (BuildContext context, int index) {
 					// Clear Button
 					if (index == 0) {
