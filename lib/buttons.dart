@@ -6,11 +6,11 @@ class MyButton extends StatelessWidget {
 // declaring variables
 final color;
 final textColor;
-final buttonText;
+final String buttonText;
 final buttontapped;
 
 //Constructor
-MyButton({this.color, this.textColor, this.buttonText, this.buttontapped});
+MyButton({this.color, this.textColor, required this.buttonText, this.buttontapped});
 
 @override
 Widget build(BuildContext context) {
